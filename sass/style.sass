@@ -1,0 +1,95 @@
+$color_red: #FF3D4A
+$color_grey: #f3f3f1
+$color_yellow: #FFE18D
+$color_dark_grey: #4F4C4B
+
+*
+  // border: 1px solid
+  position: relative
+  font-family:  'Roboto Condensed', sans-serif , "微軟正黑體"
+
+html,body
+  width: 100%
+  height: 100%
+  margin: 0
+  padding: 0
+  display: flex
+  justify-content: center
+  align-items: center
+  background-color: $color_grey
+
+#checklist
+  display: inline-block
+  padding: 20px
+  border: solid 4px $color_dark_grey
+  background-color: white
+  box-shadow: 0px 0px 30px rgba(0,0,0,0.2)
+
+h1
+  padding: 20px
+  margin-top: -20px
+  margin-left: -20px
+  margin-right: -20px
+  border-bottom: solid 2px $color_dark_grey
+  background-color: $color_yellow
+  font-weight: 500
+  
+#items_list,.list
+  padding: 5px
+  margin-top: 10px
+
+.buy_item
+  padding: 5px
+  list-style: none
+  border: solid 2px $color_dark_grey
+  margin-top: 10px
+  font-weight: 900
+    
+  & input
+    width: 100px
+    border: solid 3px black
+    padding: 2px
+      
+  & .price
+      display: inline-block
+      position: absolute
+      padding-right: 8px
+      padding-left: 8px
+      right: 50px
+      &::after
+        content: "$"
+  & .del_btn
+      display: inline-block
+      position: absolute
+      padding-right: 8px
+      padding-left: 8px
+      right: 10px
+      cursor: pointer
+      &:hover
+        background-color: $color_red
+        color: white
+        cursor: pointer
+  & .addbtn
+      cursor: pointer
+      margin-left: 5px
+      padding: 5px 
+      border: solid 3px $color_dark_grey
+      &:hover
+        background-color: $color_red
+        color: white
+button
+  border: none
+.control_panel 
+  padding: 20px
+.total
+  background-color: $color_yellow
+  .count
+    display: inline-block
+    position: absolute
+    padding-right: 8px
+    padding-left: 8px
+    right: 50px
+  
+  & .price
+      background-color: transparent
+  
